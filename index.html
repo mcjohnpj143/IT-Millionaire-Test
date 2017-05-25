@@ -86,7 +86,7 @@ body {margin:0; background-color: #333}
   		<div style="padding-top: 5px;"></div>
   		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" data-toggle="modal" data-target="#myModal">Continue</button>
   		<div style="padding-top: 5px;"></div>
-  		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" data-toggle="modal" data-target="#myModal">Exit</button>
+  		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" onclick="closeWin()">Exit</button>
   </center> 
 </div>
 
@@ -329,6 +329,15 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+</script>
+
+<script>
+
+function closeWin() {
+	var conf= confirm("Do you want to Exit?");
+	if (conf==true){this.close();}
+    
 }
 </script>
 
