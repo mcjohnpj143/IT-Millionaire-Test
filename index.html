@@ -10,7 +10,7 @@
 	<!--<link rel="stylesheet" type="text/css" href="CSS/style.css">-->
 
 <style>
-body {margin:0; background-color: #333}
+body {margin:0; background-color: #333; visibility: visible;}
 
 .topnav {
   overflow: hidden;
@@ -43,6 +43,7 @@ body {margin:0; background-color: #333}
   .topnav a.icon {
     float: right;
     display: block;
+
   }
 }
 
@@ -60,17 +61,34 @@ body {margin:0; background-color: #333}
   }
 
 }
-.modal-footer {   border-top: 0px; }
+.modal-footer { border-top: 0px; }
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color:#FFCC00;
+}
 </style>
-</head>
-<body>
+
 	
+
+
+
+</head>
+
+<body>
+
+<div class="loader text-center"><img src="images/firstloading.gif" style="width:300px; height:300px; margin-top:120px;margin-left: auto;margin-right: auto;"/></div>
 <div class="topnav" id="myTopnav">
 
   <a href="#Home" style="font-size: 15px;"><i href="#" class="fa fa-home"></i> Home</a>
   <a href="#Instructions" data-toggle="modal" data-target="#myModal"><i href="#" class="fa fa-info"></i> Instructions</a>
   <a href="#About" data-toggle="modal" data-target="#myModal2"><i href="#" class="fa fa-user"></i> About</a>
-  <a href="html/Register.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Create User</a>
+  <a href="#Register" data-toggle="modal" data-target="#myModalReg"><i class="fa fa-user-plus" aria-hidden="true"></i> Create User</a>
   <a href="#Login" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
   <!-- Trigger the modal with a button -->
@@ -78,13 +96,13 @@ body {margin:0; background-color: #333}
 
 </div>
 <div style="padding-top: 49px;"></div>
-<img src="images/logo.png" style="width: 100%; height: 100%; background-color: #333"></img>
+<img src="images/logo.png" style="width: 100%; height: 100%; background-color: #333">
 <div style="padding-left:16px; padding-right: 16px; text-align: justify; text-justify: inter-word;">
   <br>
   <center>
   		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" data-toggle="modal" data-target="#myModal">Play</button><br>
   		<div style="padding-top: 5px;"></div>
-  		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" data-toggle="modal" data-target="#myModal">Continue</button>
+  		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" data-toggle="modal" data-target="#myModal">Highscores</button>
   		<div style="padding-top: 5px;"></div>
   		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" onclick="closeWin()">Exit</button>
   </center> 
@@ -102,8 +120,8 @@ body {margin:0; background-color: #333}
         </div>
         		<div class="modal-body" style="text-align: justify; padding-right: 30px;">
           		  <h3 class="w3-wide" style="text-align: left;">Who Wants To Be An IT Millionaire</h3>
-				  <p>This game is limited only for those who knows a basic CSS, HTML and JavaScript scripting language only. This game is for fun only at the same time learning!<br>
-				  <center><b>Developers:</b><br>Paul John Peligro<br>Muhammad Sasi<br>Pepirakum Macadaya</center>
+				  <p>Who Wants To Be An IT Millionaire is a Hybrid Android Application. This game is limited only for those who knows a basic CSS, HTML and JavaScript scripting language only. This game is for fun only at the same time learning!<br>
+				  <center><b>Developers:</b><br>Paul John Peligro<br>Muhammad Sasi<br>Pepirakum Macadaya<br>© Copyright 2017</center>
 				  </p>
 
 				</div>
@@ -196,7 +214,39 @@ body {margin:0; background-color: #333}
 				        <!-- Loading Screen -->
 				        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
 				        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:500px;overflow:hidden;">
-				            
+				            <div>
+				                <img data-u="image" src="img/01.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/02.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/03.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/04.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/05.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/06.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/07.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/08.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/09.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/10.jpg" />
+				            </div>
+				            <div>
+				                <img data-u="image" src="img/11.jpg" />
+				            </div>
 				            <a data-u="any" href="https://www.jssor.com" style="display:none">slider bootstrap</a>
 				        </div>
 				        <!-- Bullet Navigator -->
@@ -270,7 +320,7 @@ body {margin:0; background-color: #333}
             </div>
             <div class="form-group">
               <button class="btn btn-warning btn-lg btn-block">Sign In</button>
-              <span class="pull-right"><a href="html/Register.html">Register</a></span><span><a href="#">Need help?</a></span>
+              <span class="pull-right"><a href="#Register" data-toggle="modal" data-target="#myModalReg">Register</a></span><span><a href="#">Need help?</a></span>
             </div>
           </form>
       </div>
@@ -285,7 +335,45 @@ body {margin:0; background-color: #333}
 <!--login modal END-->
 
 
- <script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Modal Register -->
+  <div class="modal fade" id="myModalReg" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #EC971F;color: white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registration Form</h4>
+        </div>
+        <div class="modal-body" style="text-align: justify; padding-right: 30px;">
+			
+						
+			  <form>
+
+			    <div class="form-group">
+			    <h6><p>You may fill-up bellow to create a new user.</p></h6>
+			      <label for="usr">Username:</label>
+			      <input type="text" class="form-control" id="usr" placeholder="Username here...">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Password:</label>
+			      <input type="password" class="form-control" id="pwd" placeholder="Password here...">
+			    </div>
+			  </form>
+			  <center>
+			  		<button type="button" class="btn btn-warning btn-lg" style="width: 40%; min-width: 30%;" data-toggle="modal" data-target="#myModal">Register</button><br>
+			  </center> 
+			
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal Register END-->
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 
@@ -304,10 +392,40 @@ function myFunction() {
 
 function closeWin() {
 	var conf= confirm("Do you want to Exit?");
-	if (conf==true){window.close();}
-    
+	if (conf==true){
+
+                this.close();
+                window.close();
+                this.exit();
+
+                 try{
+                this.focus();
+                self.opener = this;
+                self.close();
+            }
+            catch(e){
+
+            }
+
+            try{
+                window.open('','_self','');
+                window.close();
+            }
+            catch(e){
+
+            }
+	}
 }
 </script>
 
+<script>
+	setTimeout(function(){
+	      //deferred onload
+	     $(document).ready(function(){   
+			$(".loader").fadeOut(1000);
+			document.body.style.visibility = "visible"; 
+		 });
+    }, 1000);
+</script>
 </body>
 </html>
