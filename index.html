@@ -398,23 +398,14 @@ function closeWin() {
                 window.close();
                 this.exit();
 
-                 try{
-                this.focus();
-                self.opener = this;
-                self.close();
-            }
-            catch(e){
-
-            }
-
             try{
-                window.open('','_self','');
-                window.close();
+                app.exitApp();
             }
             catch(e){
 
             }
-	}
+
+     }
 }
 </script>
 
