@@ -1,0 +1,87 @@
+#template { 
+  background-color: white;
+  bottom: 30px;
+  margin: -10 auto !important;
+  text-align: center !important;
+  width: 100% !important;
+  height: 250px;
+  position: fixed; 
+  opacity: .9;
+  margin-left: 0px;
+  z-index: 1000;
+  background-image: url("../images/template.png"); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+#submitAnswer { 
+  background-color: #EC971F;
+  bottom: 0;
+  margin: -10 auto !important;
+  text-align: center !important;
+  width: 100% !important;
+  height: 30px;
+  position: fixed; 
+  opacity: .9;
+  margin-left: 0px;
+  z-index: 1000;
+  display: none;
+}
+
+#Question{
+  margin-top: 10px;
+  height: 80px;
+  width: 80%;
+  border: solid 0px red;
+  color: white;
+  overflow-y: scroll;
+}
+
+#LetterA{
+  margin-top: 13px;
+  margin-left: 50px;
+  height: 24px;
+  width: 70%;
+  border: solid 0px red;
+  color: white;
+  overflow-y: scroll;
+  text-align: left;
+}
+#LetterB{
+  margin-top: 12px;
+  margin-left: 50px;
+  height: 24px;
+  width: 70%;
+  border: solid 0px red;
+  color: white;
+  overflow-y: scroll;
+  text-align: left;
+}
+#LetterC{
+  margin-top: 12px;
+  margin-left: 50px;
+  height: 24px;
+  width: 70%;
+  border: solid 0px red;
+  color: white;
+  overflow-y: scroll;
+  text-align: left;
+}
+#LetterD{
+  margin-top: 12px;
+  margin-left: 50px;
+  height: 24px;
+  width: 70%;
+  border: solid 0px red;
+  color: white;
+  overflow-y: scroll;
+  text-align: left;
+}
+
+.divs {
+    border: 1.0px solid rgb(204, 204, 204);
+    border-radius: 10.0px 10.0px 10.0px 10.0px;
+}
+.divs:hover, #selected_divs, .QuickStartLong:hover {
+    background: rgb(184, 225, 252);
+}
