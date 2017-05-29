@@ -4,6 +4,7 @@
 		id        = "com.phonegap.api-request"
 		version   = "1.0.0">
 	<name>IT Millionaire</name>
+	<preference name="Fullscreen" value="true" />
 	<description>Who Wants To Be An IT Millionaire is a Hybrid Android Application V.1.0</description>
-	<icon src="images/logo.png" />
+	<icon src="images/logo2.png" />
 </widget>
